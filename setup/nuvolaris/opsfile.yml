@@ -284,3 +284,10 @@ tasks:
     - echo "Login with:" ops ide login {{.USR}} https://miniops.me
     - echo "Password is saved in:" ~/.ops/{{.USR}}.password
     - echo "Web URL is:" "$HOST"
+
+
+  add-aliases:
+    desc: (Linux only)
+    cmds:
+    - uv run add-aliases.py "{{.U}}" "{{.H}}" "{{.P}}" ""
+

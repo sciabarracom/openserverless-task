@@ -189,3 +189,10 @@ tasks:
           FLAG=--debug
         fi
         bun usage/usage.js $FLAG
+
+
+  extraingress:
+    silent: false
+    cmds:
+    - uv run extra-aliases.py "{{._username_}}" "{{.__host}}" "{{.__port}}" "{{.__ip}}" "{{.__delete}}"
+  
