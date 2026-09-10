@@ -41,3 +41,4 @@ header:
     - NOTICE
     - '.gitignore'
     - '**/.env.*'
+    - '**/bun.lock'
