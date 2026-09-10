@@ -37,7 +37,12 @@
             max-width: 300px;
         }
 
-        .button-row {
+        h2 {
+            margin-top: 40px;
+            font-size: 20px;
+        }
+
+        .contact-row {
             display: flex;
             justify-content: center;
             gap: 20px;
@@ -60,17 +65,32 @@
             cursor: pointer;
         }
 
-        .linkedin {
-            background-color: #0077b5;
+        .github {
+            background-color: #24292f;
         }
 
-        .discord {
-            background-color: #5865f2;
+        .mailinglist {
+            background-color: #6c757d;
+        }
+
+        .website {
+            background-color: #0a7d64;
         }
 
         .button img {
             width: 20px;
             height: 20px;
+        }
+
+        .contact-note {
+            color: #555;
+            font-size: 14px;
+            margin: 0 auto 24px;
+            max-width: 600px;
+        }
+
+        .contact-note a {
+            color: #0a7d64;
         }
 
         .textarea-row {
@@ -109,18 +129,29 @@
     <h1>Welcome to</h1>
     <img src="os-logo-full-vertical-bg-white.png" alt="OpenServerless Logo" />
 
-    <div class="button-row">
+    <h2>Get in touch</h2>
 
-         <img width="50" height="50" src="linkedin.png" alt="LinkedIn Icon" />
-        <a class="button linkedin" href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fopenserverless.apache.org%2F"
-            target="_blank">
-            Share on LinkedIn
+    <div class="contact-row">
+        <a class="button github" href="https://github.com/apache/openserverless" target="_blank" rel="noopener">
+            GitHub
         </a>
-       <img width="50" height="50" src="discord.png"  alt="Discord Icon" />
-        <a class="button discord" href="https://bit.ly/openserverless-discord" target="_blank">
-            Join Us on Discord
+        <a class="button mailinglist" href="https://lists.apache.org/list.html?dev@openserverless.apache.org"
+            target="_blank" rel="noopener">
+            Mailing List
+        </a>
+        <a class="button website" href="https://openserverless.apache.org/" target="_blank" rel="noopener">
+            Website
         </a>
     </div>
+
+    <p class="contact-note">
+        Browse the archives at
+        <a href="https://lists.apache.org/list.html?dev@openserverless.apache.org" target="_blank" rel="noopener">lists.apache.org</a>.
+        To subscribe, send an empty email to
+        <a href="mailto:dev-subscribe@openserverless.apache.org?subject=subscribe">dev-subscribe@openserverless.apache.org</a>
+        and reply to the confirmation message. Afterwards you can post to
+        <a href="mailto:dev@openserverless.apache.org">dev@openserverless.apache.org</a>.
+    </p>
 </body>
 
 </html>
